@@ -1,0 +1,15 @@
+body {background-color:whitesmoke; }
+#nav a{text-decoration: solid; }
+img { object-fit: cover; width: 230px; height: 230px; }
+#size summary{font-size: 30px; text-align: start;}
+#size p,h2,li{text-align: center;}
+
+/* #side h3{text-align: center;} */
+p{text-align: center; }
+
+/* form{text-align: center; } */
+form input,textarea{display: block; }
+#up a{text-align: start;}
+
+#link{position: absolute; top: 30px; right: 80px; font-size: 1.8cm;}
+#brline a{display: block;font-size: 1cm;}
