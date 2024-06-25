@@ -1,7 +1,8 @@
-body {background-color:whitesmoke; }
+
+* {background-color:whitesmoke;font-size: 1.5vw; }
 #nav a{text-decoration: solid; }
 img { object-fit: cover; width: 230px; height: 230px; }
-#size summary{font-size: 30px; text-align: start;}
+#size summary{font-size: 3vw; text-align: center;}
 #size p,h2,li{text-align: center;}
 
 /* #side h3{text-align: center;} */
@@ -11,5 +12,6 @@ p{text-align: center; }
 form input,textarea{display: block; }
 #up a{text-align: start;}
 
-#link{position: absolute; top: 30px; right: 80px; font-size: 1.8cm;}
+#link{position: absolute; top: 30px; right: 80px; font-size: 4.5vw;}
+ 
 #brline a{display: block;font-size: 1cm;}
