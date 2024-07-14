@@ -1,15 +1,111 @@
-.gamecontainer{
-    background-color: blueviolet;
-    display:flex;
-    justify-content: center;
-    margin-top: 50px;
+/* Basic styles */
 
+h1 {
+    margin-top: 20px;
+    text-align: center;
 }
-.container{
 
-display: grid;
-grid-template-columns:repeat(3,10vw) ;
-grid-template-rows: repeat(3,10vw);
+.gamecontainer {
+    background-color: rgb(244, 242, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px; /* Add some padding for better spacing */
+    box-sizing: border-box;
+}
 
+.gamearea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Add some gap between the grid and the gifs */
+}
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Equal width columns */
+    grid-template-rows: repeat(3, 1fr); /* Equal height rows */
+    gap: 10px; /* Adjust as needed */
+    width: 90vw; /* Make it responsive */
+    max-width: 600px; /* Limit maximum size */
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw; /* Responsive font size */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1; /* Make each box a square */
+}
+
+.box:hover {
+    background-color: rgb(182, 178, 186);
+}
+
+.gameinfo {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Larger reset button */
+#reset {
+    padding: 10px 20px; /* Adjust padding for larger button */
+    font-size: 1.5rem; /* Increase font size for readability */
+    margin-top: 10px; /* Space between turn info and button */
+}
+
+img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.info {
+    font-size: 1.5rem; /* Increase font size for readability */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .box {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+
+    /* Adjust reset button and info font size for smaller screens */
+    #reset, .info {
+        font-size: 1rem;
+    }
+}
+
+#fungif {
+    width: 500px; /* Initial width to show the image */
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.gifs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add some gap between the gifs */
+    width: 200px; /* Adjust as needed to fit the layout */
 }
