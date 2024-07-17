@@ -1,0 +1,147 @@
+h1 {
+    text-align: center;
+}
+
+* {
+    background-color: rgb(219, 236, 216);
+}
+
+
+
+
+
+.image-container {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 15em;
+    right: 15em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    border: 15px solid rgb(244, 245, 244);
+    border-radius: 2em;
+    cursor: pointer;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+
+/*  Adjust layout for screens smaller than 768px  */
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+
+    .image-container {
+        max-width: calc(50% - 20px);
+        /* Two columns with gap */
+    }
+}
+
+/* Example: Further adjustments for smaller screens or specific resolutions */
+@media (max-width: 480px) {
+    .image-container {
+        max-width: 100%;
+        /* Full width for single column layout */
+    }
+}
+
+
+
+.image-container:first-child {
+    transform: rotate(345deg);
+}
+
+.image-container:nth-child(2) {
+    transform: rotate(385deg);
+}
+
+.image-container:nth-child(3) {
+    transform: rotate(320deg);
+}
+
+.image-container:nth-child(4) {
+    transform: rotate(20deg);
+}
+
+.image-container:nth-child(5) {
+    transform: rotate(370deg);
+}
+
+.image-container:nth-child(6) {
+    transform: rotate(340deg);
+}
+
+.image-container:nth-child(7) {
+    transform: rotate(340deg);
+}
+
+.image-container:nth-child(8) {
+    transform: rotate(350deg);
+}
+
+.image-container:nth-child(9) {
+    transform: rotate(20deg);
+}
+
+.image-container:nth-child(10) {
+    transform: rotate(380deg);
+}
+
+.image-container:nth-child(11) {
+    transform: rotate(315deg);
+}
+
+.image-container:nth-child(12) {
+    transform: rotate(20deg);
+
+}
+
+.image-container:nth-child(13) {
+    transform: rotate(20deg);
+
+}
+
+.image-container:nth-child(14) {
+    transform: rotate(260deg);
+}
+
+.image-container:nth-child(15) {
+    transform: rotate(30deg);
+
+}
+
+.image-container:nth-child(16) {
+    transform: rotate(30deg);
+}
+
+.image-container:nth-child(17) {
+    transform: rotate(340deg);
+}
+
+.image-container:nth-child(18) {
+    transform: rotate(310deg);
+}
+
+.image-container:nth-child(19) {
+    transform: rotate(310deg);
+
+
+}
+
+.image-container:nth-child(20) {
+    transform: rotate(360deg);
+}
