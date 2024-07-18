@@ -9,6 +9,8 @@ let imageContainers = document.querySelectorAll(".image-container");
 
 let stackingOrder = 1;
 
+let music = new Audio("mylove.mp3");
+// music.play();
 
 // loop through each image container
 imageContainers.forEach((element, index) => {
@@ -19,17 +21,22 @@ imageContainers.forEach((element, index) => {
 
     // Add any event listeners to each image container 
     element.addEventListener("click", () => {
+
+        music.play().catch(error => {
+            console.error("Error playing audio:", error);
+        });
+
         stackingOrder++;
         element.style.right = "50em";
-        element.style.zIndex = stackingOrder;
+        element.style.zIndex = stackingOrder.toString();
         // element.style.zIndex = zIndex.toString();
         element.style.transform = "rotate(0deg)";
         element.style.transition = " right 0.5s ease, transform 0.5s ease";
 
         setTimeout(() => {
-            stackingOrder -= 21
+            stackingOrder -= 3
             element.style.right = "";
-            element.style.stackingOrder = stackingOrder.toString();
+            element.style.zIndex = stackingOrder.toString();
             element.style.transform = "";
             element.style.transition = "all 0.3s ease,transform 0.3s ease";
 
