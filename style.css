@@ -1,14 +1,79 @@
-* {background-color:whitesmoke;font-size: 1.5vw; }
-#nav a{text-decoration: solid; }
-img { object-fit: cover; width: 230px; height: 230px; }
-#size summary{font-size: 3vw; text-align: center; cursor: pointer;}
-#size p,h2,li{text-align: center;}
 
-/* #side h3{text-align: center;} */
-p{text-align: center; }
+body {
+  background-color: whitesmoke;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-/* form{text-align: center; } */
-form input,textarea{display: block; }
-#up a{text-align: start;}
-#link{position: absolute; top: 30px; right: 80px; font-size: 4.5vw;}
-#brline a{display: block;font-size: 1cm;}
+#nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+#nav {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+img {
+
+  display: block;
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 230px;
+  height: 230px;
+}
+
+#size summary {
+  font-size: 3vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+#size p,
+h2,
+li {
+  text-align: center;
+}
+
+#nav a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+#nav a:focus {
+  outline: 2px solid lightblue;
+}
+
+p {
+  text-align: left;
+  margin-left: 40px;
+}
+
+form input,
+textarea {
+  display: block;
+}
+
+#up a {
+  text-align: start;
+}
+
+#link {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  font-size: 4.5vw;
+}
+
+#brline a {
+  display: block;
+  font-size: 1cm;
+}
+
+
+img:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
