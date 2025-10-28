@@ -15,15 +15,15 @@ body {
 
 
 .intro_text {
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 28px;      
   color: black;
-  height: 60vh; 
+  height: 60vh;        
   line-height: 1.6;
 }
 
