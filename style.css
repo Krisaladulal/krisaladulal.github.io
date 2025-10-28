@@ -15,16 +15,17 @@ body {
 
 
 .intro_text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  position: fixed;           
+  top: 50%;                
+  left: 50%;                 
+  transform: translate(-50%, -50%);  
   text-align: center;
   font-weight: bold;
-  font-size: 28px;      
+  font-size: 28px;           
   color: black;
-  height: 60vh;        
   line-height: 1.6;
+  width: 80%;  
 }
 
 #nav a {
