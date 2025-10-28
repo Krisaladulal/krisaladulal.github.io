@@ -13,14 +13,15 @@ body {
   color: black;
 }
 
-.intro-text {
+
+.intro_text {
   text-align: center;
   font-weight: bold;
   font-size: 2vw;
-  margin-top: 20px;
+  margin-top: 80px;
   color: black;
+  line-height: 1.6;
 }
-
 
 #nav a {
   text-decoration: none;
