@@ -153,15 +153,19 @@ main,
 }
 
 .project-list h3 a {
-    font-size: 1.4rem;
-    color: sandybrown;
-    text-decoration: none;
-    font-weight: bold;
+  font-size: 1.4rem;
+  color: sienna;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .project-list h3 a:hover {
-    text-decoration: underline;
+  color: peru;
+  transform: scale(1.05);
+  text-decoration-thickness: 3px;
 }
+
 
 .project-list p {
     font-size: 1.1rem;
