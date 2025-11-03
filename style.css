@@ -1,152 +1,361 @@
-html {
-  scroll-behavior: smooth;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 body {
-  background-color: whitesmoke;
-  line-height: 1.6;
-  font-size: clamp(14px, 1.2vw, 18px);
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: black;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
 }
 
 
-.intro_text {
-
-  position: fixed;           
-  top: 50%;                
-  left: 50%;                 
-  transform: translate(-50%, -50%);  
-  text-align: center;
-  font-weight: bold;
-  font-size: 28px;           
-  color: black;
-  line-height: 1.6;
-  width: 80%;  
+.site-header {
+    width: 260px;
+    background-color: white;
+    border-right: 2px solid lightgray;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
 }
 
-#nav a {
-  text-decoration: none;
-  color: black;
-  font-weight: 500;
-  display: inline-block;
-  margin: 4px 0;
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
 }
 
-#nav {
-  margin-top: 20px;
-  margin-left: 40px;
-  padding: 5px 0;
+.site-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: sandybrown;
+    text-align: center;
 }
 
-#nav a:hover {
-  color: blue;
-  text-decoration: underline;
-  transition: color 0.3s ease;
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    align-items: center;
 }
 
-#nav a:focus {
-  outline: 2px solid lightblue;
-  outline-offset: 2px;
-  border-radius: 4px;
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
 }
 
-img {
-  display: block;
-  margin-bottom: 10px;
-  object-fit: cover;
-  width: 230px;
-  height: 230px;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+.navbar a:hover {
+    background-color: burlywood;
+    color: white;
 }
 
-img:hover {
-  box-shadow: 0 4px 15px gray;
-  transform: scale(1.02);
+main,
+.intro,
+.projects,
+.contact-section {
+    margin-left: 290px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 900px;
+    margin-right: auto;
 }
 
-#size summary {
-  font-size: 3vw;
-  text-align: center;
-  cursor: pointer;
-  color: black;
-  font-weight: 600;
-  margin: 10px 0;
+.intro {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    text-align: center;
 }
 
-#size p,
-#size h2,
-#size li {
-  text-align: center;
+.size {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-p {
-  text-align: left;
-  margin-left: 40px;
-  color: black;
-  max-width: 600px;
+.size summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: center;
+    background: sandybrown;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
 }
 
-form input,
-textarea {
-  display: block;
-  padding: 6px;
-  margin: 6px 0;
-  border: 1px solid lightgray;
-  border-radius: 5px;
+.size summary:hover {
+    background: peru;
 }
 
-#up a {
-  text-align: start;
+.size[open] {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px lightgray;
+    padding: 30px;
 }
 
-#link {
-  position: absolute;
-  top: 30px;
-  right: 80px;
-  font-size: 4.5vw;
-  text-decoration: none;
-  color: white;
-  background-color: dodgerblue;
-  padding: 8px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-#link:hover {
-  background-color: mediumblue;
+.size p,
+.size ul,
+.size h2 {
+    text-align: center;
+    margin-top: 15px;
+    line-height: 1.8;
 }
 
 #brline a {
-  display: block;
-  font-size: 1cm;
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    display: block;
+    margin: 5px 0;
 }
 
-#brline a:hover {
-  color: blue;
+.size ul li {
+    font-size: 1.1rem;
+    margin: 6px 0;
+    list-style-type: disc;
+    list-style-position: inside;
 }
 
-
-
-header {
-  background-color: lightblue;
-  padding: 10px 20px;
-  font-weight: bold;
+.projects h2 {
+    font-size: 2.3rem;
+    color: sandybrown;
+    margin-bottom: 25px;
 }
 
-
-section {
-  background-color: white;
-  border-left: 4px solid lightblue;
-  padding: 15px;
-  margin: 20px 0;
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
 }
 
+.project-list h3 a {
+    font-size: 1.4rem;
+    color: sandybrown;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.project-list h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-list p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+.contact-section {
+    max-width: 900px;
+    margin: 0 auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    padding: 40px;
+    position: relative;
+}
+
+#link {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    background-color: sandybrown;
+    color: white;
+    padding: 25px 45px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    box-shadow: 0px 6px 15px gray;
+    transition: all 0.3s ease;
+}
+
+#link:hover {
+    background-color: peru;
+    transform: scale(1.05);
+}
+
+.contact-links {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+.contact-links a {
+    color: sienna;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+body.hello-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    padding: 60px 20px;
+    position: relative;
+}
+
+.hello-page h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: sandybrown;
+    line-height: 2.4rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px lightgray;
+}
+
+.contact-form label {
+    font-weight: 600;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    font-size: 1rem;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    width: 48%;
+    background-color: sandybrown;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+    background-color: peru;
+}
+
+.go-home {
+    position: fixed;
+    bottom: 25px;
+    left: 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: sandybrown;
+    transition: color 0.3s ease;
+}
+
+.go-home:hover {
+    color: peru;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .site-header {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 2px solid lightgray;
+    }
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    main,
+    .intro,
+    .projects,
+    .contact-section {
+        margin-left: 0;
+        padding: 30px;
+    }
+
+    .intro {
+        font-size: 1.4rem;
+    }
+
+    #link {
+        position: static;
+        margin: 20px auto;
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .contact-section {
+        font-size: 1.2rem;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+}

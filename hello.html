@@ -1,24 +1,38 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>Say hello</title>
-  </head>
-  <body>
-    <h2>
-      Thanks for taking the time to reach out.<br />how can i help you today?
-    </h2>
-    <form>
-      Name:<input type="name" placeholder="Enter your name" /> Email:<input
-        type="email"
-        placeholder="Enter your email address"
-      />
-      Number:<input type="number" /> Your Message:
-      <textarea rows="10" cols="50"> </textarea>
-      <input type="reset" value="reset all" />
-      <input type="submit" value="submit now" />
-    </form>
-    <a href="index.html"> Go back to home </a>
-  </body>
-</html>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Say Hello - Krisala Dulal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hello-page">
 
+  <h2>
+    Thanks for taking the time to reach out!<br>
+    How can I help you today?
+  </h2>
+
+  <form class="contact-form" action="#" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+    <label for="number">Number:</label>
+    <input type="tel" id="number" name="number" placeholder="Enter your contact number">
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="8" cols="50" placeholder="Type your message here..." required></textarea>
+
+    <div style="display:flex; justify-content: space-between; width:100%;">
+      <input type="reset" value="Reset All">
+      <input type="submit" value="Submit Now">
+    </div>
+  </form>
+
+  <a href="index.html" class="go-home">← Go back to Home</a>
+
+</body>
+</html>
